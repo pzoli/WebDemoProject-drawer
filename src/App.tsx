@@ -1,22 +1,22 @@
 import React from 'react';
 import HomeScreen from './screens/HomeScreen';
 import AdminScreen from './screens/AdminScreen';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createDrawerNavigator } from '@react-navigation/drawer'
 import { NavigationContainer } from '@react-navigation/native';
 import { RootStackParamList } from './screens/RootStackParamList';
 import 'react-native-gesture-handler';
 
-const Stack = createStackNavigator<RootStackParamList>();
+const Drawer = createDrawerNavigator<RootStackParamList>();
 
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={HomeScreen}
+      <Drawer.Navigator initialRouteName="Home">
+        <Drawer.Screen name="Home" component={HomeScreen}
         />
-        <Stack.Screen name="Admin" component={AdminScreen}
+        <Drawer.Screen name="Admin" component={AdminScreen}
         />
-      </Stack.Navigator>
+      </Drawer.Navigator>
     </NavigationContainer>);
 };
 

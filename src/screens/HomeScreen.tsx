@@ -1,10 +1,10 @@
 import { useNavigation } from '@react-navigation/native';
-import { StackNavigationProp } from '@react-navigation/stack';
+import { DrawerNavigationProp } from '@react-navigation/drawer';
 import React from 'react';
 import { Button, SafeAreaView, StatusBar, Text, View } from 'react-native';
 import { RootStackParamList } from './RootStackParamList';
 
-type HomeScreenProp = StackNavigationProp<RootStackParamList, 'Home'>;
+type HomeScreenProp = DrawerNavigationProp<RootStackParamList, 'Home'>;
 
 const HomeScreen: React.FC = () => {
     const navigation = useNavigation<HomeScreenProp>();

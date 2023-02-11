@@ -1,5 +1,5 @@
 # WebDemoProject
-This is a Ract Native demo project for Web and Stack Navigation
+This is a Ract Native demo project for Web and Drawer Navigation
 ## Install
 yarn install
 
